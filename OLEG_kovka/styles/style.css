@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-sefif;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/Raleway.ttf");
+}
+
+
+@media (max-width: 768px) {
+* {
+    /*
+    background-image: url("../images/back.jpg");
+    background-repeat: repeat; */
+    margin-left: 5px;
+}
+
+.header-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.header-title {
+    text-align: center;
+    font-size: 24px;
+}
+ 
+.flex-main-content-titles {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    font-weight: 700;
+}
+
+.main-content-description {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 1.5em;
+}
+
+
+.main-content-under-title {
+    font-size: 20px;
+}
+
+.flex-park {
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.gallery-container {
+    overflow: hidden;
+    width: 100%;
+}
+    
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+    
+.gallery-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px; 
+    text-align: center;
+    scroll-snap-align: start;
+}
+    
+.gallery-item img {
+    max-width: 100%;
+}
+
+.flex-main-content-img {
+    padding: 10px;
+    
+}
+
+
+
+    
+    
+    
+footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    
+.footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+.footer-contact {
+        flex: 1;
+        text-align: left;
+        padding: 0 20px; /* Добавляем внутренний отступ для контактной информации */
+    }
+    
+.footer-heading {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+.footer-contact p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    
+.footer-contact a {
+        color: #67a5ff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+.footer-contact a:hover {
+        color: #4472c4;
+    }
+    
+.footer-logo img {
+        max-width: 100px;
+        height: auto;
+    }
+}
+
+/* Стили для планшетов (максимальная ширина 992px) */
+@media (max-width: 992px) {
+    /* Ваши стили для планшетов */
+}
+
+@media (min-width: 993px) {
+.header-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 79px;
+}
+
+
+.gallery-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px; 
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.gallery-item img {
+    max-width: 100%;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-contact {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px; /* Добавляем внутренний отступ для контактной информации */
+}
+
+.footer-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer-contact a {
+    color: #67a5ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+    color: #4472c4;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+}
